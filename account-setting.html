@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodingDung | Profile Template</title>
+    <link rel="stylesheet" href="account-setting.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- awesome font link -->
+    <link rel="stylesheet" href="AwesomeFont-links/all.min.css" />
+    <script src="AwesomeFont-links/all.min.js"></script>
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      crossorigin=""
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="Slider-links/css/swiper-bundle.min.css" />
+
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- navbar section start -->
+    <nav class="navbar navbar-expand-lg navbar-light nav-container">
+      <div class="container-md">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html"
+          ><div class="logo">
+            <img src="Images/logo.png" width="100%" alt="logo" /></div
+        ></a>
+      </div>
+    </nav>
+    <!-- navbar section end -->
+
+    <!-- profile-account section start -->
+    <div class="container-md light-style flex-grow-1 container-p-y">
+      <h4 style="color: #245e81" class="font-weight-bold py-3 my-4">
+        Account settings
+      </h4>
+      <div class="profile-card overflow-hidden">
+        <div class="row no-gutters row-bordered row-border-light">
+          <div class="col-md-3 pt-0">
+            <div class="list-group list-group-flush account-settings-links">
+              <a
+                class="list-group-item list-group-item-action active"
+                data-toggle="list"
+                href="#account-general"
+                >General</a
+              >
+              <a
+                class="list-group-item list-group-item-action"
+                data-toggle="list"
+                href="#personal-details"
+                >Address</a
+              >
+              <a
+                class="list-group-item list-group-item-action"
+                data-toggle="list"
+                href="#employee-details"
+                >Employment Details</a
+              >
+              <!-- <a
+                class="list-group-item list-group-item-action"
+                data-toggle="list"
+                href="#account-info"
+                >Info</a
+              > -->
+              <!-- <a
+                    class="list-group-item list-group-item-action"
+                    data-toggle="list"
+                    href="#account-social-links"
+                    >Social links</a
+                > -->
+              <!-- <a
+                class="list-group-item list-group-item-action"
+                data-toggle="list"
+                href="#account-connections"
+                >Connections</a
+              > -->
+
+              <a
+                class="list-group-item list-group-item-action"
+                data-toggle="list"
+                href="#account-change-password"
+                >Change password</a
+              >
+              <a
+                class="list-group-item list-group-item-action"
+                data-toggle="list"
+                href=""
+                id="logout"
+                >Log Out</a
+              >
+              <!-- <a
+                    class="list-group-item list-group-item-action"
+                    data-toggle="list"
+                    href="#account-notifications"
+                    >Notifications</a
+                > -->
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="tab-content">
+              <!-- general-info start -->
+              <div class="tab-pane fade active show" id="account-general">
+                <div class="card-body media align-items-center">
+                  <img
+                    src="Images/profile-pic.jpg"
+                    alt
+                    class="d-block ui-w-80"
+                  />
+                  <div class="media-body ml-4">
+                    <label class="btn btn-outline-primary">
+                      Upload new photo
+                      <input type="file" class="account-settings-fileinput" />
+                    </label>
+                    &nbsp;
+                    <button type="button" class="btn btn-default md-btn-flat">
+                      Reset
+                    </button>
+                    <div class="text-light small mt-1">
+                      Allowed JPG, GIF or PNG. Max size of 800K
+                    </div>
+                  </div>
+                </div>
+                <hr class="border-light m-0" />
+                <div class="card-body">
+                  <div class="form-group">
+                    <label class="form-label">Username</label>
+                    <input
+                      type="text"
+                      class="form-control mb-1"
+                      value="Sachin_P13"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" value="Sachin" />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label">E-mail</label>
+                    <input
+                      type="text"
+                      class="form-control mb-1"
+                      value="sachin@gmail.com"
+                    />
+                    <div class="alert alert-warning mt-3">
+                      Your email is not confirmed.
+                      <a href="javascript:void(0)">Verify Now</a>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label">Phone</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      value="+91 8975413329"
+                    />
+                  </div>
+                  <hr class="border-light m-0" />
+                  <div class="card-body pb-2">
+                    <div class="form-group">
+                      <label class="form-label">Birthday</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        value="May 3, 1995"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label">Gender:</label>
+                    <div class="gender-container">
+                      <div class="gender-box">
+                        <input
+                          class="gender-input hiddn"
+                          type="radio"
+                          id="male"
+                          name="gender"
+                          value="male"
+                          checked
+                          required
+                        />
+                        <label for="male">
+                          <!-- Male SVG -->
+                          <img src="images/male.png" alt="" srcset="" />
+                          <span>Male</span>
+                        </label>
+                      </div>
+                      <div class="gender-box">
+                        <input
+                          class="gender-input hiden"
+                          type="radio"
+                          id="female"
+                          name="gender"
+                          value="female"
+                          required
+                        />
+                        <label for="female">
+                          <!-- Female SVG -->
+                          <img src="images/female.png" alt="" />
+                          <span>Female</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- general-info end -->
+
+              <!-- account-password start -->
+              <div class="tab-pane fade" id="account-change-password">
+                <div class="card-body pb-2">
+                  <div class="form-group">
+                    <label class="form-label">Current password</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">New password</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">Repeat new password</label>
+                    <input type="password" class="form-control" />
+                  </div>
+                </div>
+              </div>
+              <!-- account-password end -->
+
+              <!-- personal-info start -->
+              <div class="tab-pane fade" id="personal-details">
+                <h6 class="my-3">Personal Address</h6>
+
+                <div class="form-group">
+                  <lable class="form-label">Adderss Line 1:</lable>
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="2"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <lable class="form-label">Adderss Line 2:</lable>
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="2"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <lable class="form-label">Pincode:</lable>
+                  <input type="text" class="form-control mb-1" value="400607" />
+                </div>
+                <div class="form-group">
+                  <lable class="form-label">city:</lable>
+                  <input type="text" class="form-control mb-1" value="Thane" />
+                </div>
+                <div class="form-group">
+                  <lable class="form-label">State:</lable>
+                  <input
+                    type="text"
+                    class="form-control mb-1"
+                    value="Maharashtra"
+                  />
+                </div>
+                <div class="form-group">
+                  <lable class="form-label">Nature of Address:</lable>
+                  <select name="" class="form-control mb-1" id="">
+                    <option value="">Select</option>
+                    <option value="Self Owned">Self Owned</option>
+                    <option value="Rented">Rented</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <lable class="form-label">Years at current address:</lable>
+                  <input type="text" class="form-control mb-1" value="12" />
+                </div>
+
+                <h6 class="my-4">Company Address</h6>
+
+                <div class="form-group">
+                  <lable class="form-label">Company Name:</lable>
+                  <input
+                    type="text"
+                    class="form-control mb-1"
+                    value="Fincash pvt ltd."
+                  />
+                </div>
+
+                <div class="form-group">
+                  <lable class="form-label">Adderss Line 1:</lable>
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="2"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <lable class="form-label">Adderss Line 2:</lable>
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="2"
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <lable class="form-label">Pincode:</lable>
+                  <input type="text" class="form-control mb-1" value="400607" />
+                </div>
+                <div class="form-group">
+                  <lable class="form-label">city:</lable>
+                  <input type="text" class="form-control mb-1" value="Thane" />
+                </div>
+                <div class="form-group">
+                  <lable class="form-label">State:</lable>
+                  <input
+                    type="text"
+                    class="form-control mb-1"
+                    value="Maharashtra"
+                  />
+                </div>
+              </div>
+              <!-- personal-info end -->
+
+              <!-- employee-info start -->
+              <div class="tab-pane fade" id="employee-details">
+                <div class="form-group">
+                  <lable class="form-label">Company Name:</lable>
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Fincash pvt ltd."
+                  />
+                </div>
+
+                <div class="form-group">
+                  <lable class="form-label">Company Type:</lable>
+                  <select
+                    name="salarymode"
+                    id="salarymode"
+                    class="form-control"
+                  >
+                    <!-- <option value="">Select</option> -->
+                    <option value="Private">Private</option>
+                    <option value="Government">Government</option>
+                    <!-- <option value="cash">cash</option> -->
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <lable class="form-label">Designation:</lable>
+                  <input type="text" class="form-control" value="Designer" />
+                </div>
+
+                <div class="form-group">
+                  <lable class="form-label">Work Experience:</lable>
+                  <input type="text" class="form-control" value="4" />
+                </div>
+
+                <div class="form-group">
+                  <lable class="form-label">Salary Mode:</lable>
+                  <select
+                    name="salarymode"
+                    id="salarymode"
+                    class="form-control"
+                  >
+                    <!-- <option value="">Select</option> -->
+                    <option value="bank account">Bank Account</option>
+                    <option value="cheque">Cheque</option>
+                    <!-- <option value="cash">cash</option> -->
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="" class="from-label">Income:</label>
+                  <select class="form-control" name="income" id="Income">
+                    <option value="">Select Your Income</option>
+                    <option value="No Income">No Income</option>
+                    <option value="0-250000">Less than 2.5 Lakh</option>
+                    <option value="250000-750000">2.5 Lakh to 7.5 Lakh</option>
+                    <option value="750000-1500000">7.5 Lakh to 15 Lakh</option>
+                    <option value="1500000-3000000">15 Lakh to 30 lakh</option>
+                    <option value="3000000+">30 Lakh & Above</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="" class="form-label">Type of Employment:</label>
+                  <div class="employment-container">
+                    <div style="height: 100px" class="employment-box">
+                      <label for="Self-employed">
+                        <!-- self-employed SVG -->
+                        <img src="images/self-employed.png" alt="" srcset="" />
+                        <h6>self employed</h6>
+                        <span></span>
+                        <input
+                          class="employment-input"
+                          type="radio"
+                          id="Self-employed"
+                          name="employment"
+                          value="self employed"
+                          required
+                        />
+                      </label>
+                    </div>
+
+                    <div style="height: 100px" class="employment-box">
+                      <label for="salaried">
+                        <!-- salaried SVG -->
+                        <img src="images/salaried.png" alt="" srcset="" />
+                        <h6>salaried</h6>
+                        <!-- <span>Earn Regular Monthly Income</span> -->
+                        <span></span>
+                        <input
+                          class="employment-input"
+                          type="radio"
+                          id="salaried"
+                          name="employment"
+                          value="salaried"
+                          required
+                          checked
+                        />
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- employee-info end -->
+
+              <!-- social links start -->
+              <!-- <div class="tab-pane fade" id="account-social-links">
+                    <div class="card-body pb-2">
+                    <div class="form-group">
+                        <label class="form-label">Twitter</label>
+                        <input
+                        type="text"
+                        class="form-control"
+                        value="https://twitter.com/user"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Facebook</label>
+                        <input
+                        type="text"
+                        class="form-control"
+                        value="https://www.facebook.com/user"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Google+</label>
+                        <input type="text" class="form-control" value />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">LinkedIn</label>
+                        <input type="text" class="form-control" value />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Instagram</label>
+                        <input
+                        type="text"
+                        class="form-control"
+                        value="https://www.instagram.com/user"
+                        />
+                    </div>
+                    </div>
+                </div> -->
+              <!-- social links end -->
+
+              <!-- connection section start -->
+              <!-- <div class="tab-pane fade" id="account-connections">
+                <div class="card-body">
+                  <button type="button" class="btn btn-twitter">
+                    Connect to <strong>Twitter</strong>
+                  </button>
+                </div>
+                <hr class="border-light m-0" />
+                <div class="card-body">
+                  <h5 class="mb-2">
+                    <a
+                      href="javascript:void(0)"
+                      class="float-right text-muted text-tiny"
+                      ><i class="ion ion-md-close"></i> Remove</a
+                    >
+                    <i class="ion ion-logo-google text-google"></i>
+                    You are connected to Google:
+                  </h5>
+                  <a
+                    href="/cdn-cgi/l/email-protection"
+                    class="__cf_email__"
+                    data-cfemail="f9979498818e9c9595b994989095d79a9694"
+                    >[email&#160;protected]</a
+                  >
+                </div>
+                <hr class="border-light m-0" />
+                <div class="card-body">
+                  <button type="button" class="btn btn-facebook">
+                    Connect to <strong>Facebook</strong>
+                  </button>
+                </div>
+                <hr class="border-light m-0" />
+                <div class="card-body">
+                  <button type="button" class="btn btn-instagram">
+                    Connect to <strong>Instagram</strong>
+                  </button>
+                </div>
+              </div> -->
+              <!-- connection section end -->
+
+              <!-- notifications end -->
+              <!-- <div class="tab-pane fade" id="account-notifications">
+                    <div class="card-body pb-2">
+                    <h6 class="mb-4">Activity</h6>
+                    <div class="form-group">
+                        <label class="switcher">
+                        <input type="checkbox" class="switcher-input" checked />
+                        <span class="switcher-indicator">
+                            <span class="switcher-yes"></span>
+                            <span class="switcher-no"></span>
+                        </span>
+                        <span class="switcher-label"
+                            >Email me when someone comments on my article</span
+                        >
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="switcher">
+                        <input type="checkbox" class="switcher-input" checked />
+                        <span class="switcher-indicator">
+                            <span class="switcher-yes"></span>
+                            <span class="switcher-no"></span>
+                        </span>
+                        <span class="switcher-label"
+                            >Email me when someone answers on my forum thread</span
+                        >
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="switcher">
+                        <input type="checkbox" class="switcher-input" />
+                        <span class="switcher-indicator">
+                            <span class="switcher-yes"></span>
+                            <span class="switcher-no"></span>
+                        </span>
+                        <span class="switcher-label"
+                            >Email me when someone follows me</span
+                        >
+                        </label>
+                    </div>
+                    </div>
+                    <hr class="border-light m-0" />
+                    <div class="card-body pb-2">
+                    <h6 class="mb-4">Application</h6>
+                    <div class="form-group">
+                        <label class="switcher">
+                        <input type="checkbox" class="switcher-input" checked />
+                        <span class="switcher-indicator">
+                            <span class="switcher-yes"></span>
+                            <span class="switcher-no"></span>
+                        </span>
+                        <span class="switcher-label">News and announcements</span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="switcher">
+                        <input type="checkbox" class="switcher-input" />
+                        <span class="switcher-indicator">
+                            <span class="switcher-yes"></span>
+                            <span class="switcher-no"></span>
+                        </span>
+                        <span class="switcher-label">Weekly product updates</span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="switcher">
+                        <input type="checkbox" class="switcher-input" checked />
+                        <span class="switcher-indicator">
+                            <span class="switcher-yes"></span>
+                            <span class="switcher-no"></span>
+                        </span>
+                        <span class="switcher-label">Weekly blog digest</span>
+                        </label>
+                    </div>
+                    </div>
+                </div> -->
+              <!-- notifications end -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-right mt-3">
+        <button type="button" class="btn btn-primary">Edit</button>&nbsp;
+        <button type="button" class="btn btn-primary">Save changes</button
+        >&nbsp;
+        <button type="button" class="btn btn-default">Cancel</button>
+      </div>
+    </div>
+    <!-- profile-account section end -->
+
+    <!-- footer section start -->
+    <footer class="container-fuild mt-5"></footer>
+    <!-- footer section end -->
+  </body>
+  <script
+    data-cfasync="false"
+    src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+  ></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript"></script>
+  <script src="script.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const formElements = document.querySelectorAll("input, select, textarea");
+      const editBtn = document.querySelector("button.btn-primary:nth-child(1)");
+      const saveBtn = document.querySelector("button.btn-primary:nth-child(2)");
+      const cancelBtn = document.querySelector("button.btn-default");
+
+      // Disable fields on load
+      formElements.forEach((el) => (el.disabled = true));
+
+      // Hide Save/Cancel initially
+      saveBtn.style.display = "none";
+      cancelBtn.style.display = "none";
+
+      // Edit button logic
+      editBtn.addEventListener("click", () => {
+        formElements.forEach((el) => (el.disabled = false));
+        editBtn.style.display = "none";
+        saveBtn.style.display = "inline-block";
+        cancelBtn.style.display = "inline-block";
+      });
+
+      // Save Changes button logic
+      saveBtn.addEventListener("click", () => {
+        // You can add actual form submission logic here
+        alert("Changes saved!");
+
+        formElements.forEach((el) => (el.disabled = true));
+        editBtn.style.display = "inline-block";
+        saveBtn.style.display = "none";
+        cancelBtn.style.display = "none";
+      });
+
+      // Cancel button logic
+      cancelBtn.addEventListener("click", () => {
+        // Optionally reload the page to discard changes:
+        // location.reload();
+
+        formElements.forEach((el) => (el.disabled = true));
+        editBtn.style.display = "inline-block";
+        saveBtn.style.display = "none";
+        cancelBtn.style.display = "none";
+      });
+    });
+  </script>
+</html>

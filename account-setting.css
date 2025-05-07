@@ -1,0 +1,402 @@
+body {
+    background: #f5f5f5;
+    margin-top: 20px;
+}
+
+.nav-container {
+    background-color: #cff1ff;
+}
+
+.logo {
+    width: 200px;
+    /* background-color: #4eadd2; */
+}
+
+.logo img {
+    width: 70%;
+}
+
+/* tablet device */
+@media (min-width: 500px) and (max-width: 890px) {
+    .logo img {
+        width: 70%;
+    }
+}
+
+/* mobile device */
+@media (min-width: 300px) and (max-width: 490px) {
+    .logo img {
+        width: 50%;
+    }
+}
+
+.ui-w-80 {
+    width: 80px !important;
+    height: auto;
+}
+
+
+.btn-default {
+    border-color: rgba(24, 28, 33, 0.1);
+    background: rgba(0, 0, 0, 0);
+    color: #4E5155;
+}
+
+label.btn {
+    margin-bottom: 0;
+}
+
+.btn-outline-primary {
+    border-color: #26B4FF;
+    background: transparent;
+    color: #26B4FF;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.text-light {
+    color: #babbbc !important;
+}
+
+.btn-facebook {
+    border-color: rgba(0, 0, 0, 0);
+    background: #3B5998;
+    color: #fff;
+}
+
+.btn-instagram {
+    border-color: rgba(0, 0, 0, 0);
+    background: #000;
+    color: #fff;
+}
+
+.profile-card {
+    background-clip: padding-box;
+    box-shadow: 0 1px 4px rgba(24, 28, 33, 0.012);
+}
+
+.row-bordered {
+    overflow: hidden;
+}
+
+.account-settings-fileinput {
+    position: absolute;
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.employee-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+    margin: 25px 5px;
+}
+
+.account-settings-links .list-group-item.active {
+    font-weight: bold !important;
+}
+
+html:not(.dark-style) .account-settings-links .list-group-item.active {
+    background: transparent !important;
+}
+
+.account-settings-multiselect~.select2-container {
+    width: 100% !important;
+}
+
+.light-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+.light-style .account-settings-links .list-group-item.active {
+    color: #4e5155 !important;
+}
+
+.material-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+.material-style .account-settings-links .list-group-item.active {
+    color: #4e5155 !important;
+}
+
+.dark-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem;
+    border-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+.dark-style .account-settings-links .list-group-item.active {
+    color: #fff !important;
+}
+
+.light-style .account-settings-links .list-group-item.active {
+    color: #245e81 !important;
+}
+
+.light-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+
+/* gender and Marital status section start */
+
+.gender-container,
+.marital-container {
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 25px;
+    align-items: center;
+    margin: 7px 5px;
+}
+
+.gender-box,
+.marital-box {
+    width: 110px;
+    height: 220px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 10px;
+    /* padding: 10px; */
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #f0f0f0;
+    /* Example: light gray */
+    color: black;
+    border: 2px solid #ccc;
+    /* Light gray border */
+}
+
+.gender-box:hover,
+.marital-box:hover {
+    border: 2px solid #002b50;
+    font-size: bold;
+    background-color: #3895b4;
+    color: #ffffff;
+}
+
+/* Styles for selected gender */
+.gender-box.selected,
+.marital-box.selected,
+.employment-box.selected,
+.education-box.selected {
+    border: 2px solid #002b50;
+    font-size: bold;
+    background-color: #3895b4;
+    color: #ffffff;
+}
+
+/* Styles for unselected gender */
+.gender-box.unselected,
+.marital-box.unselected,
+.employment-box.unselected,
+.education-box.unselected {
+    background-color: #f0f0f0;
+    /* Example: light gray */
+    color: black;
+    border: 2px solid #ccc;
+    /* Light gray border */
+}
+
+.gender-box input,
+.marital-box input {
+    /* display: none; */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.gender-box label,
+.marital-box label {
+    /* background-color: #ccc; */
+    width: 110px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.gender-box img,
+.marital-box img {
+    height: 80%;
+    margin-top: 10px;
+    /* height: 48px; */
+    /* margin-bottom: 10px; */
+}
+
+.gender-box label span,
+.marital-box label span {
+    font-size: 16px;
+}
+
+.gender-input,
+.marital-input {
+    width: 20px;
+    height: 20px;
+}
+
+@media (min-width: 300px) and (max-width: 499px) {
+
+    .gender-container,
+    .marital-container {
+        margin: 7px 25px;
+    }
+}
+
+/* employment section start  */
+
+
+.employment-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 25px;
+    /* align-items: center; */
+    margin: 25px 5px;
+}
+
+.employment-box {
+    width: 170px;
+    height: 170px;
+    display: flex;
+    /* position: relative; */
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid #ccc; */
+    border-radius: 10px;
+    /* padding: 10px; */
+    cursor: pointer;
+    transition: 0.3s;
+
+    background-color: #f0f0f0;
+    /* Example: light gray */
+    color: black;
+    border: 2px solid #ccc;
+    /* Light gray border */
+}
+
+.employment-box:hover {
+    /* border: 2px solid #002b50; */
+    background-color: #235d80;
+    color: #fff;
+    font-size: bold;
+}
+
+
+.employment-box label {
+    /* background-color: #ccc; */
+    width: 170px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.employment-box img {
+    border: 2px solid #000;
+    padding: 2px;
+    border-radius: 50%;
+    margin-top: 15px;
+    height: 48px;
+    margin-bottom: 10px;
+}
+
+.employment-box:hover.employment-box img {
+    border: 2px solid #ffffff;
+}
+
+.employment-box label h6 {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 7px;
+    margin: 0;
+}
+
+.employment-box label span {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 12px;
+    text-align: center;
+    color: #475467;
+    /* letter-spacing: 1px; */
+    margin: 10px;
+}
+
+.employment-box:hover.employment-box label span {
+    color: #ffffff;
+}
+
+.employment-input {
+    width: 20px;
+    height: 20px;
+}
+
+
+@media (min-width: 300px) and (max-width: 499px) {
+    .employment-container {
+        margin: 7px 0px;
+        gap: 10px;
+        justify-content: start;
+    }
+
+    .employment-box {
+        width: 130px;
+        /* height: 150px; */
+        margin-bottom: 20px;
+    }
+
+    .employment-box label {
+        width: 100px;
+        /* height: 150px; */
+        /* margin-bottom: 200px; */
+    }
+
+    .employment-box img {
+        padding: 2px;
+        margin-top: 10px;
+        height: 48px;
+        margin-bottom: 10px;
+    }
+
+    .employment-box label h6 {
+        font-size: 12px;
+        text-align: center;
+        padding: 0 7px;
+        margin: 0;
+    }
+
+    .employment-box label span {
+        font-size: 8px;
+        line-height: 12px;
+        margin: 10px;
+    }
+
+    .employment-input {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+/* employment section end  */
+
+
+input:disabled,
+textarea:disabled,
+select:disabled {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    cursor: not-allowed;
+}
